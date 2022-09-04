@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="./script.js"></script>
+    <script>
+        function showHide(elem){
+            const password = document.getElementById("password");
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            if(type === "password"){
+                elem.className = "bi bi-eye-slash";
+            } else{
+                elem.className = "bi bi-eye";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form id="container">
+        <div id="image">
+
+        </div>
+
+        <div id="login-form-container">
+            <div id="login-form">
+                <h2 class="header">Login Form</h2>
+                <input type="text" id="username" class="form-text-field" placeholder="Username...">
+                <input type="password" id="password" class="form-text-field" placeholder="Password...">
+                <i style="margin-left: -30px;" class="bi bi-eye-slash" id="togglePassword" onclick="showHide(this)"></i>
+                <table style="width: 100%; margin: 0 0 10px 0; padding: 0px;">
+                    <tr style="margin: 0px; padding: 0px;">
+                        <td id="remember-me-cell">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me" id="remember-me-lbl">Remember Me</label>
+                        </td>
+                        <td id="forget-pass-cell">
+                            <a href="" id="forget-pass">Forget Password?</a>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" id="login-button" class="button">Login</button>
+                <div class="sideline">OR</div>
+                <button type="submit" id="fb-login-button" class="button"><i class="fa fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;Login with Facebook</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
