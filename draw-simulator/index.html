@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Draw Simulator</title>
+</head>
+<body>
+    <div id="page-body" style="margin: 3%;">
+        <h2>Draw Simulator</h2>
+        <div id="container" class="draw-tables text-center">
+            <table>
+                <tr>
+                    <td><span><button id="add-member-button">Add&#13;&#10;Member</button></span></td>
+                    <td><span><button id="clear-input-button">Clear&#13;&#10;Input</button></span></td>
+                </tr>
+                    <td><span><button id="remove-member-button">Remove&#13;&#10;Member</button></span></td>
+                    <td><span><button id="autofill-button">Autofill</button></span></td>
+                <tr>
+
+                </tr>
+            </table>
+            
+            
+            
+            
+            
+            <span>
+                <div class="draw-group">
+                    <div class="group-header"><input class="group-header-input" type="text" value="Pot 1" placeholder="Group Name..."></div>
+                    <div class="delete-button-container">
+                        <button class="delete-button" aria-label="Close alert" type="button">
+                            <span aria-hidden="true">Delete Group</span>
+                        </button>
+                    </div>
+                    <div class="member-cell"><input class="member-input" type="text" placeholder="Member 1..."></div>
+                    <div class="member-cell"><input class="member-input" type="text" placeholder="Member 2..."></div>
+                    <div class="member-cell"><input class="member-input" type="text" placeholder="Member 3..."></div>
+                </div>
+            </span>
+
+            <span>
+                <div class="draw-group">
+                    <div class="group-header"><input class="group-header-input" type="text" value="Pot 2" placeholder="Group Name..."></div>
+                    <div class="delete-button-container">
+                        <button class="delete-button" aria-label="Close alert" type="button">
+                            <span aria-hidden="true">Delete Group</span>
+                        </button>
+                    </div>
+                    <div class="member-cell"><input class="member-input" type="text" placeholder="Member 1..."></div>
+                    <div class="member-cell"><input class="member-input" type="text" placeholder="Member 2..."></div>
+                    <div class="member-cell"><input class="member-input" type="text" placeholder="Member 3..."></div>
+                </div>
+            </span>
+
+            <span id="add-group-btn" class="text-center plus-button" style="margin-left:40px;"><button class="w3-button w3-circle w3-black">+</button></span>
+        </div>
+
+        <button id="draw-button">Draw</button>
+        <button id="clear-button">Clear</button>
+    </div>
+</body>
+</html>

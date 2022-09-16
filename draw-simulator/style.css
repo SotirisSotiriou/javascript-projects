@@ -1,0 +1,168 @@
+.draw-tables{
+    margin: 5%;
+    padding: 3%;
+    border: 1px solid black;
+    width: auto;
+    overflow-x: scroll;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.draw-group{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0;
+    margin-left: 3em;
+}
+
+.group-header{
+    border-bottom: 2px solid black;
+    background-color: lightgray;
+    width: 100%;
+}
+
+.group-header-input{
+    margin: 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+}
+
+.member-input{
+    outline: none;
+    border: none;
+}
+
+.member-cell{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 3px;
+}
+
+.member-cell:last-child{
+    border: none;
+}
+
+
+.delete-button-container{
+    text-align: center;
+}
+
+.delete-button{
+    width: 100%;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+#add-member-button{
+    outline: none;
+    background-color: cornflowerblue;
+    border: none;
+    aspect-ratio: 1/1;
+    white-space: pre-wrap;
+    color: white;
+    padding: 1em;
+    width: 6em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#remove-member-button{
+    outline: none;
+    border: none;
+    background-color: red;
+    aspect-ratio: 1/1;
+    white-space: pre-wrap;
+    color: white;
+    padding: 1em;
+    width: 6em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#draw-button{
+    outline: none;
+    border: none;
+    background-color: lightskyblue;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    width: 7em;
+    margin-bottom: auto;
+}
+
+#page-body{
+    text-align: center;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+#result-container{
+    border: 1px solid black;
+    padding: 3em;
+    margin: 5em;
+    width: auto;
+    overflow-x: scroll;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.result-table{
+    margin-left: 2em;
+    margin-right: 2em;
+    border: 1px solid black;
+}
+
+.result-table tr{
+    border-bottom: 1px solid black;
+}
+
+.result-table tr td, 
+.result-table tr th{
+    padding: 1em;
+    white-space: nowrap;
+}
+
+#clear-button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+    width: 7em;
+    background-color: lightgray;
+}
+
+#clear-input-button{
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    aspect-ratio: 1/1;
+    white-space: pre-wrap;
+    color: white;
+    padding: 1em;
+    width: 6em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#autofill-button{
+    outline: none;
+    border: none;
+    background-color: lightgreen;
+    aspect-ratio: 1/1;
+    white-space: pre-wrap;
+    color: white;
+    padding: 1em;
+    width: 6em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
